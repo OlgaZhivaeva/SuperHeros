@@ -8,7 +8,7 @@ class SuperHero:
         response = requests.get(url=url_to_request)
         return response.json()['intelligence']
 
-if __name__ == '__mane__':
+if __name__ == '__main__':
     import requests
     BASEURL = 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api'
     hulk = SuperHero('332')
